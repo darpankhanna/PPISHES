@@ -1,14 +1,15 @@
-# ERGCNPPIS: Enhanced Residual Graph Convolutional Network for Protein-Protein Interaction Site Prediction
+# PPISHES: An Enhanced Physicochemical Approach For Predicting Protein Interaction Sites Using Graph Neural Networks
 
-Accurate prediction of protein interaction sites is essential for understanding many biological processes. The Residual Graph Convolutional Network for Protein-Protein Interaction Site Prediction (RGCNPPIS) model has been successful by leveraging sequence features and spatial neighborhood information. However, its performance can be further improved in accuracy and efficiency.
+Accurate prediction of protein interaction sites is key to understanding the underlying mechanisms of many biological processes. The current state-of-the-art method for site prediction, Residual Graph Convolutional Network for Protein-Protein Interaction Site Prediction (RGCNPPIS), is top-ranked by leveraging sequence features and incorporating spatial neighborhood information; however, there is still room for improvement in both accuracy and performance. RGCNPPIS captures local and global structural, evolutionary, and sequence-based features; however, it overlooks physicochemical properties important for protein interactions and struggles with feature redundancy, which limits its overall performance. 
 
-RGCNPPIS captures local and global structural, evolutionary, and sequence-based features but overlooks critical physicochemical properties important for protein interactions and suffers from feature redundancy. To address these limitations, we propose **Enhanced RGCNPPIS (ERGCNPPIS)**. This enhanced model incorporates three key physicochemical features—**electrostatic potential**, **hydrogen-bonding propensity**, and **solvent-accessible surface area**—to provide better feature representation of protein structures and improve the understanding of protein interactions.
+By addressing these gaps, we aim to enhance the predictive power of RGCNPPIS and introduce new feature sets that improve overall model performance. We propose an enhanced model, PPISHES (Prediction of Protein Interactions based on Solvent Accessible Surface Area, Hydrogen-Bonding Propensity, and Electrostatic Potential Sites), which is built upon incorporating three critical physicochemical features—electrostatic potential, hydrogen-bonding propensity, and solvent-accessible-surface-area—to enrich the feature representation of protein structure thereby improving site prediction for both obligate and non-obligate complexes. To enhance interpretability and feature selection, we use feature ablation analysis, systematically masking individual features and identifying the most important features of the model. 
 
-In addition to these enhancements, we perform **feature ablation analysis** to systematically evaluate and identify the most important features for the model. ERGCNPPIS has been evaluated on the **Test_71** and **Test_315** benchmark datasets, achieving a binary accuracy of **90.2%** on Test_71 and **93.7%** on Test_315. The model also shows significant improvements in key metrics, including a **31.9% increase in F1 score** and **42.8% improvement in the Area Under Precision-Recall Curve** on Test_315.
+We evaluated PPISHES on widely recognized benchmark datasets, achieving a substantial improvement in the Area Under the Precision-Recall Curve, with increases of up to 42.8\%. PPISHES was also evaluated on key metrics like accuracy, precision, recall, area under the curve, and Matthews correlation coefficient), confirming its superior overall performance and surpassing current state-of-the-art.
+
 
 ## System Requirements
 
-To run ERGCNPPIS, you need the following dependencies:
+To run PPISHES, you need the following dependencies:
 
 - **Python** 3.10.13
 - **NumPy** 1.26.4
