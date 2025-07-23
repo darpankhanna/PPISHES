@@ -1,0 +1,7 @@
+echo 'name: ppishes
+channels: [conda-forge]
+dependencies:
+  - python=3.8
+  - pytorch=1.12
+  - biopython
+  - apbs=3.0.0' > environment.yml
