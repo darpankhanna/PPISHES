@@ -6,7 +6,13 @@ By addressing these gaps, we aim to enhance the predictive power of RGCNPPIS and
 
 We evaluated PPISHES on widely recognized benchmark datasets, achieving a substantial improvement in the Area Under the Precision-Recall Curve, with increases of up to 42.8\%. PPISHES was also evaluated on key metrics like accuracy, precision, recall, area under the curve, and Matthews correlation coefficient), confirming its superior overall performance and surpassing current state-of-the-art.
 
+echo '# PPISHES Setup Guide
 
+## Installation
+```bash
+conda env create -f environment.yml
+conda activate ppishes
+```
 ## System Requirements
 
 To run PPISHES, you need the following dependencies:
